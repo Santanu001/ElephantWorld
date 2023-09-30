@@ -5,14 +5,11 @@
 
 .header {
     position: sticky;
-    /* width: 100%; */
     display: flex;
     align-items: center;
     background-color: rgb(234, 234, 234);
     padding: 0.5rem;
-    top: 0;
-    /* height: 4rem; */
-   
+    top: 0;  
 }
 a {
     color: black;
@@ -20,12 +17,6 @@ a {
 a:hover {
     color: gray;
 }
-
-/* a:visited{
-    color: blue;
-} */
-
-
 
 .logo img{
     height: 3rem;
@@ -36,15 +27,11 @@ a:hover {
 }
 
 .navbar {
-    /* background-color: black; */
     display: flex;
     align-items: center;
-    
-    /* width: 80%; */
 }
 
 .nav-list {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,9 +47,6 @@ a:hover {
 .current {
     text-decoration: underline;
 }
-/* .nav-item {
-    margin: 0 2rem;
-} */
 
 .search {
     
@@ -110,10 +94,6 @@ a:hover {
     background-color: rgb(212, 208, 208);
     cursor: pointer;
 }
-
-/* .first-section {
-    display: flex;
-} */
 
 .first-section video {
     width: 100%;
