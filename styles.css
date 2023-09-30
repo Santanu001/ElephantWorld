@@ -5,11 +5,13 @@
 
 .header {
     position: sticky;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
+    align-items: center;
     background-color: rgb(234, 234, 234);
     padding: 0.5rem;
     top: 0;
+    /* height: 4rem; */
    
 }
 a {
@@ -30,6 +32,7 @@ a:hover {
     border: 0.1rem solid black;
     border-radius: 2rem;
     margin-right: 4rem;
+    margin-left: 1rem;
 }
 
 .navbar {
@@ -48,7 +51,6 @@ a:hover {
     gap: 3rem;
     list-style: none;
     font-size: 1.2rem;
-    
 }
 
 .nav-list a {
@@ -72,6 +74,22 @@ a:hover {
     gap: 0.2rem;
 }
 
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+ }
+
+.mobile-nav-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
 .main {
     max-width: 60%;
     margin: auto;
@@ -89,7 +107,6 @@ a:hover {
 }
 
 .search-button {
-    /* background-color: rgb(144, 166, 245); */
     background-color: rgb(212, 208, 208);
     cursor: pointer;
 }
@@ -106,9 +123,6 @@ a:hover {
 .second-section {
     margin-top: 1rem;
     margin-bottom: 4rem;
-    /* gap: 1rem; */
-    /* display: flex;
-    align-items: center; */
 }
 
 .second-section .left p {
@@ -147,9 +161,56 @@ a:hover {
     text-align: center;
 }
 
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 764px) {
     .main {
         max-width: 80%;
+    }
+
+    .mobile-navbar-btn {
+        display: flex;
+        position: absolute;
+        border: 2px solid black;
+        top: 10px;
+        right: 5%;
+     }
+
+     .header {
+        padding: 0.3rem 0.5rem;
+     }
+
+     .navbar, .search {
+        display: none;
+     }
+
+     .logo img{ 
+        height: 2.5rem;
+        margin: 0;
+     }
+
+     /* For Mobile nav button */
+
+     .active {
+        flex-direction: column;
+     }
+
+     .active .nav-list {
+        flex-direction: column;
+        margin: 2rem 0;
+     }
+
+     .active .navbar, .active .search {
+        display: flex;
+     }
+
+     .active .search {
+        margin: 0;
+     }
+
+     .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
     }
 }
