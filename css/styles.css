@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
 .header {
     position: sticky;
     display: flex;
@@ -120,6 +126,7 @@ a:hover {
 
 .footer {
     background-color: rgb(209, 207, 207);
+    margin-top: auto;
 }
 
 .footer-link {
