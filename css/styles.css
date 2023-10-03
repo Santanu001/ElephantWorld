@@ -21,7 +21,8 @@ a {
     color: black;
 }
 a:hover {
-    color: gray;
+    color: blue;
+    
 }
 
 .logo img{
@@ -50,8 +51,9 @@ a:hover {
     text-decoration: none;
 }
 
-.current {
-    text-decoration: underline;
+.current a {
+    color: black;
+    font-weight: 600;
 }
 
 .search {
@@ -62,6 +64,9 @@ a:hover {
     gap: 0.2rem;
 }
 
+.h-visibility {
+    visibility: hidden;
+}
 .mobile-navbar-btn {
     display: none;
     background: transparent;
@@ -111,7 +116,7 @@ a:hover {
 
 .second-section .left p {
     margin-top: 0.5rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .second-section .right img {
